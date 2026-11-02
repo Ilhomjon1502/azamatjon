@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azamatjon — Iqtisodchi va kelajak dasturchisi</title>
+  <meta name="description" content="Azamatjon — iqtisod yo'nalishi magistratura talabasi. Kitob o'qish va stol tennisini yaxshi ko'radi, IT sohasida yuksalish uchun o'rganmoqda.">
+  <meta property="og:title" content="Azamatjon — Iqtisodchi va kelajak dasturchisi">
+  <meta property="og:description" content="Iqtisod magistranti, IT sohasiga qadam qo'ymoqda.">
+  <meta property="og:image" content="img/azamat-1.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Skroll chizig'i -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- Orqa fondagi jilolanuvchi rangli dog'lar -->
+  <div class="bg-glow" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- Ikonkalar (bir marta yoziladi, sahifada <use> orqali qayta ishlatiladi) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-telegram" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+  </svg>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">Azamatjon<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#haqimda">Men haqimda</a>
+        <a href="#qiziqish">Qiziqishlar</a>
+        <a href="#maqsad">Maqsad</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Rejimni almashtirish">🌙</button>
+        <a href="https://t.me/adkhamovich_1" target="_blank" rel="noopener" class="btn btn-primary">Bog'lanish</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Iqtisod · Magistratura talabasi</span>
+          <h1>Iqtisodchi, <span class="hl">IT olamiga</span> qadam qo'ymoqda</h1>
+          <p>Salom, men Azamatjon. Iqtisod yo'nalishida magistraturada o'qiyman. Kitob o'qishni va stol tennisini yaxshi ko'raman, hozir esa kompyuter sohasida yuksalish uchun yangi bilimlar o'rganyapman.</p>
+          <div class="typing">Men — <b id="typed"></b><span class="caret"></span></div>
+          <div class="hero-actions">
+            <a href="#aloqa" class="btn btn-primary">Bog'lanish</a>
+            <a href="tel:+998945987873" class="btn btn-outline"><svg class="ico"><use href="#i-phone"/></svg> +998 94 598 78 73</a>
+          </div>
+          <div class="socials">
+            <a href="https://t.me/adkhamovich_1" target="_blank" rel="noopener" class="social tg" title="Telegram">
+              <svg class="ico"><use href="#i-telegram"/></svg> @adkhamovich_1
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="img/azamat-1.jpg" alt="Azamatjon — iqtisod magistranti">
+          </div>
+          <div class="float f1">
+            <span class="fi" style="background: var(--primary-soft);">🎂</span>
+            <span><b>22 yosh</b><small>yosh va intiluvchan</small></span>
+          </div>
+          <div class="float f2">
+            <span class="fi" style="background: var(--accent-soft);">🎓</span>
+            <span><b>Magistr</b><small>iqtisod yo'nalishi</small></span>
+          </div>
+          <div class="float f3">
+            <span class="fi" style="background: var(--green-soft);">🚀</span>
+            <span>Azamatjon<br><small>Iqtisodchi · IT o'rganuvchi</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Raqamlar -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><b data-count="22">0</b><span>yosh</span></div>
+        <div class="stat"><b data-count="3">0</b><span>sevimli kitob</span></div>
+        <div class="stat"><b data-count="2">0</b><span>asosiy qiziqish</span></div>
+        <div class="stat"><b data-count="100" data-suffix="%">0</b><span>o'rganishga ishtiyoq</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="haqimda">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Men haqimda</div>
+          <h2>Bilim, intizom va yuksalish</h2>
+          <p>Iqtisod bilan boshlangan yo'l endi texnologiyalar bilan davom etmoqda.</p>
+        </div>
+        <div class="about-split">
+          <div class="about-photo">
+            <img src="img/azamat-2.jpg" alt="Azamatjon kostyum-shimda" loading="lazy">
+          </div>
+          <div class="about-grid">
+            <div class="about-item">
+              <div class="icon" style="background: var(--primary-soft);">🎓</div>
+              <h4>Iqtisod magistranti</h4>
+              <p>Iqtisod yo'nalishida tahsil olaman: tahlil, hisob-kitob va strategik fikrlash — mening kuchli tomonlarim.</p>
+            </div>
+            <div class="about-item">
+              <div class="icon" style="background: var(--accent-soft);">💻</div>
+              <h4>IT ga qiziqish</h4>
+              <p>Kompyuter sohasini o'rganyapman: iqtisod va texnologiyani birlashtirib, yangi imkoniyatlar yaratmoqchiman.</p>
+            </div>
+            <div class="about-item">
+              <div class="icon" style="background: var(--green-soft);">🎯</div>
+              <h4>Aniq maqsad</h4>
+              <p>Har kuni bir qadam oldinga: yangi ko'nikma, yangi kitob va yangi natija.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="qiziqish">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Qiziqishlar</div>
+          <h2>Nimalarni yaxshi ko'raman</h2>
+          <p>Aqlni ham, tanani ham rivojlantiradigan mashg'ulotlar.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service">
+            <div class="icon" style="background: var(--primary-soft);">📚</div>
+            <h3>Kitob o'qish</h3>
+            <p>Kitoblar — doimiy rivojlanishning asosiy manbai.</p>
+            <ul>
+              <li>«Molxona»</li>
+              <li>«Ego sening dushmaning»</li>
+              <li>«Diqqat»</li>
+              <li>Har kuni kamida bir necha bet o'qish</li>
+            </ul>
+          </div>
+          <div class="service">
+            <div class="icon" style="background: var(--accent-soft);">🏓</div>
+            <h3>Stol tennisi</h3>
+            <p>Reaksiya, diqqat va sport ruhi — ish stolidan tashqarida ham harakatda.</p>
+            <ul>
+              <li>Tezkor fikrlash va mosllashuvchanlik</li>
+              <li>Do'stlar bilan sog'lom raqobat</li>
+              <li>Charchoqni yozib, kayfiyatni ko'taradi</li>
+              <li>Intizom va sabr tarbiyalaydi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goal -->
+    <section class="goal" id="maqsad">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Maqsad</div>
+          <h2>Kompyuter sohasida yuksalish</h2>
+          <p>Iqtisodchi + texnologiya = kelajak kasbi. Yo'l xaritam:</p>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="num">1</span><h4>Asoslarni o'rganish</h4><p>Kompyuter savodxonligi, dasturlash mantig'i va zamonaviy vositalar.</p></div>
+          <div class="step"><span class="num">2</span><h4>Amaliyot</h4><p>Kichik loyihalar yaratib, bilimni amalda mustahkamlash.</p></div>
+          <div class="step"><span class="num">3</span><h4>Iqtisod + IT</h4><p>Ma'lumotlar tahlili va avtomatlashtirish orqali iqtisodiy yechimlar.</p></div>
+          <div class="step"><span class="num">4</span><h4>Yuksalish</h4><p>Hamkorlar bilan birga yirik loyihalarda ishtirok etish.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="aloqa">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Keling, hamkorlik qilamiz</h2>
+          <p>Fikr, taklif yoki hamkorlik bo'lsa — bemalol bog'laning.</p>
+          <div class="contact-links">
+            <a href="tel:+998945987873" class="contact-link">
+              <span class="ci phone"><svg><use href="#i-phone"/></svg></span>
+              <span><small>Telefon</small>+998 94 598 78 73</span>
+            </a>
+            <a href="https://t.me/adkhamovich_1" target="_blank" rel="noopener" class="contact-link">
+              <span class="ci tg"><svg><use href="#i-telegram"/></svg></span>
+              <span><small>Telegram</small>@adkhamovich_1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://t.me/adkhamovich_1" target="_blank" rel="noopener" class="fs tg" aria-label="Telegram" title="Telegram"><svg><use href="#i-telegram"/></svg></a>
+        <a href="tel:+998945987873" class="fs phone" aria-label="Telefon" title="Telefon"><svg><use href="#i-phone"/></svg></a>
+      </div>
+      © <span id="year">2026</span> Azamatjon · <a href="https://t.me/adkhamovich_1" target="_blank" rel="noopener">Telegram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
